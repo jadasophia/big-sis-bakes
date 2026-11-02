@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fffaf5;
+    color: #2f1f1b;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1f3a5f;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+nav {
+    background-color: #172c48;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffd166;
+    margin: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #fff3df;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.welcome-text {
+    flex: 1;
+}
+
+.welcome h2 {
+    color: #1f3a5f;
+    font-size: 32px;
+}
+
+.welcome img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.featured-title {
+    color: #1f3a5f;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: #f8e3df;
+    padding: 20px;
+    border: 1px solid #d7b9a9;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #1f3a5f;
+}
+
+footer {
+    background-color: #172c48;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+
+    .welcome,
+    .cards {
+        flex-direction: column;
+    }
+
+    .welcome img {
+        width: 100%;
+    }
+}
